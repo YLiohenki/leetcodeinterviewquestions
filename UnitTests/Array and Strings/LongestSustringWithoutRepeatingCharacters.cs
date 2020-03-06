@@ -6,7 +6,7 @@ using System.Text;
 
 namespace UnitTests.Array_and_Strings
 {
-    public class Tests
+    public class TestsLongestSustringWithoutRepeatingCharacters
     {
         private LongestSustringWithoutRepeatingCharacters solution;
         [SetUp]
