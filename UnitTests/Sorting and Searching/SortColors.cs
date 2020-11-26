@@ -96,5 +96,18 @@ namespace UnitTests.Sorting_and_Searching
                 max = Math.Max(arr[i], max);
             }
         }
+
+        [Test]
+        public void Test8()
+        {
+            var arr = new int[] { 2, 0, 0 };
+            solution.SortColors(arr);
+            var max = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Assert.IsTrue(arr[i] >= max);
+                max = Math.Max(arr[i], max);
+            }
+        }
     }
 }
