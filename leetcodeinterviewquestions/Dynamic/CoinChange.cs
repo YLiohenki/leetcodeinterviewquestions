@@ -14,9 +14,12 @@ namespace leetcodeinterviewquestions.Dynamic
             var num = new int[amount + 1];
             foreach (var c in coins)
             {
-                num[c] = 1;
+                if (c <= amount)
+                {
+                    num[c] = 1;
+                }
             }
-            for (int i = 1; i < amount; ++i)
+            for (uint i = 1; i < amount; ++i)
             {
                 if (num[i] != 0)
                 {

@@ -54,5 +54,21 @@ namespace UnitTests.Dynamic
             var result = solution.CoinChange(coins, 2);
             Assert.AreEqual(2, result);
         }
+
+        [Test]
+        public void Test6()
+        {
+            var coins = new int[] { 2 };
+            var result = solution.CoinChange(coins, 1);
+            Assert.AreEqual(-1, result);
+        }
+
+        [Test]
+        public void Test7()
+        {
+            var coins = new int[] { 1, 2147483647 };
+            var result = solution.CoinChange(coins, 2);
+            Assert.AreEqual(2, result);
+        }
     }
 }
